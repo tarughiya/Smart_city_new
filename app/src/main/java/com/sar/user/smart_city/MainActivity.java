@@ -25,7 +25,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.scwang.wave.MultiWaveHeader;
+//import com.scwang.wave.MultiWaveHeader;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_main);
-        anim();
+       // anim();
         firebaseAuth = com.google.firebase.auth.FirebaseAuth.getInstance();
         progressBar=findViewById(R.id.progress_circular);
         progressBar.setVisibility(View.INVISIBLE);
@@ -77,25 +77,25 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
 
 
-    public void anim()
-    {
-        MultiWaveHeader multiWaveHeader=findViewById(R.id.top);
-        multiWaveHeader.setVelocity(1);
-        multiWaveHeader.setProgress(1);
-        multiWaveHeader.setWaveHeight(40);
-        multiWaveHeader.setGradientAngle(45);
-        multiWaveHeader.isRunning();
-        multiWaveHeader.setStartColor(R.color.ligtblue);
-        multiWaveHeader.setStartColor(R.color.darkblue);
-        MultiWaveHeader multiWaveHeader1=findViewById(R.id.bottom);
-        multiWaveHeader1.setVelocity(1);
-        multiWaveHeader1.setProgress(1);
-        multiWaveHeader1.setWaveHeight(40);
-        multiWaveHeader1.setGradientAngle(45);
-        multiWaveHeader1.isRunning();
-        multiWaveHeader1.setStartColor(R.color.ligtblue);
-        multiWaveHeader1.setStartColor(R.color.darkblue);
-    }
+//    public void anim()
+//    {
+//        MultiWaveHeader multiWaveHeader=findViewById(R.id.top);
+//        multiWaveHeader.setVelocity(1);
+//        multiWaveHeader.setProgress(1);
+//        multiWaveHeader.setWaveHeight(40);
+//        multiWaveHeader.setGradientAngle(45);
+//        multiWaveHeader.isRunning();
+//        multiWaveHeader.setStartColor(R.color.ligtblue);
+//        multiWaveHeader.setStartColor(R.color.darkblue);
+//        MultiWaveHeader multiWaveHeader1=findViewById(R.id.bottom);
+//        multiWaveHeader1.setVelocity(1);
+//        multiWaveHeader1.setProgress(1);
+//        multiWaveHeader1.setWaveHeight(40);
+//        multiWaveHeader1.setGradientAngle(45);
+//        multiWaveHeader1.isRunning();
+//        multiWaveHeader1.setStartColor(R.color.ligtblue);
+//        multiWaveHeader1.setStartColor(R.color.darkblue);
+//    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
